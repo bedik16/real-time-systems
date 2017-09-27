@@ -155,8 +155,8 @@ int main(int argc, char *argv[])
 
   printf("Periodic threads using timerfd\n");
 
-  pthread_create(&t_1, &t_1_attr, thread_1, NULL);
   pthread_create(&t_2, &t_2_attr, thread_2, NULL);
+  pthread_create(&t_1, &t_1_attr, thread_1, NULL);
   pthread_create(&t_3, &t_3_attr, thread_3, NULL);
 
   pthread_join(t_1, NULL);
